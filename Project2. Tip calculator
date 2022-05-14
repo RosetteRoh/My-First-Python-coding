@@ -14,7 +14,7 @@ result = (bill / people) * ( 1 + (tip / 100))
 # -> result_format = round(result, 2)
 # 2. Use "{:.2f}.format()
 # -> result_format = "{:.2f}".format(result)
-result_format = round(result, 2)
+result_format = "{:.2f}".format(result)
 
 #F-string : can print any type of a code
 print(f"Each person should pay: ${result_format}")
