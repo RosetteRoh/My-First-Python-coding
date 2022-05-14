@@ -1,0 +1,19 @@
+print("Welcome to the tip calculator!")
+
+# Change type: str -> float
+bill = float(input("What was the total bill? $"))
+tip = float(input("How much tip would you like to give? 10, 12, or 15? "))
+people = float(input("How many people to split the bill? "))
+
+# math operation: PEMDASLR(괄호, 등호, 곱셈/나눗셈, 덧셈/뺄셈, 왼쪽에서 오른쪽으로 연산)
+result = (bill / people) * ( 1 + (tip / 100))
+
+# Two different ways to limit a float to 2 decimal places
+# 1. Use round( , 2)
+# -> result_format = round(result, 2)
+# 2. Use "{:.2f}.format()
+# -> result_format = "{:.2f}".format(result)
+result_format = round(result, 2)
+
+#F-string : can print any type of a code
+print(f"Each person should pay: ${result_format}")
