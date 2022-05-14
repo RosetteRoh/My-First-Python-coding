@@ -2,8 +2,9 @@ print("Welcome to the tip calculator!")
 
 # Change type: str -> float
 bill = float(input("What was the total bill? $"))
-tip = float(input("How much tip would you like to give? 10, 12, or 15? "))
-people = float(input("How many people to split the bill? "))
+# Change type: str -> integer
+tip = int(input("How much tip would you like to give? 10, 12, or 15? "))
+people = int(input("How many people to split the bill? "))
 
 # math operation: PEMDASLR(괄호, 등호, 곱셈/나눗셈, 덧셈/뺄셈, 왼쪽에서 오른쪽으로 연산)
 result = (bill / people) * ( 1 + (tip / 100))
