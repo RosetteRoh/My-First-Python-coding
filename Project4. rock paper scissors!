@@ -28,7 +28,7 @@ scissors = '''
 '''
 
 #Write your code below this line 👇
-user_choice = input("What do you choose? Rock, Paper, or Scissors?")
+user_choice = input("What do you choose? Rock, Paper, or Scissors?\n")
 
 game_list = [rock, paper, scissors]
 user_list = []
